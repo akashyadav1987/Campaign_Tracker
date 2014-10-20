@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/promotorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/nameLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/place_holder_blue"
+            android:gravity="center"
+            android:text="@string/user_placeholder"
+            android:textColor="@android:color/white"
+            android:textSize="60dp" />
+
+        <TextView
+            android:id="@+id/addressHeadingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/nameLogo"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/nameLogo"
+            android:text="@string/address"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addressLines"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/addressHeadingTitle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/nameLogo"
+            android:maxLines="4" />
+
+        <LinearLayout
+            android:id="@+id/iconsLayout"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/nameLogo"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.05" />
+
+            <LinearLayout
+                android:id="@+id/timeLineIconText"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.125"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/timeLineIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/timeLineIcon"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/normal_icon" />
+
+                <TextView
+                    android:id="@+id/timeLineText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/timeLine"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.00" />
+
+            <LinearLayout
+                android:id="@+id/campaignDescIconText"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.125"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/campaignDescIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/campaignDescIcon"
+                    android:textColor="@color/lightest_orange"
+                    android:textSize="@dimen/normal_icon" />
+
+                <TextView
+                    android:id="@+id/campaignDescText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/campaignDesc"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:id="@+id/contactIconText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/contactIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/contactIcon"
+                    android:textColor="@color/lightest_orange"
+                    android:textSize="@dimen/normal_icon" />
+
+                <TextView
+                    android:id="@+id/contactText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/contact"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:id="@+id/fillReportIconText"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.125"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/fillReportIcon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fill_report_icon"
+                    android:textColor="@color/lightest_orange"
+                    android:textSize="@dimen/normal_icon" />
+
+                <TextView
+                    android:id="@+id/fillReportText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/fill_report"
+                    android:textSize="@dimen/small_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.05" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
